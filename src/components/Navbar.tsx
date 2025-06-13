@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -8,7 +9,21 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-20 backdrop-blur-md bg-white/60 border-b border-gray-200/10 shadow-sm">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex items-center h-16">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center">
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/logo-padma-fishing-net.png"
+                alt="পদ্মা ফিশিং নেট"
+                width={40}
+                height={40}
+                className="rounded-lg"
+              />
+              <span className="ml-3 text-lg font-semibold text-gray-900">
+                পদ্মা ফিশিং নেট
+              </span>
+            </Link>
+          </div>
           <div className="flex space-x-4">
             <Link
               href="/"
