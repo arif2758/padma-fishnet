@@ -10,7 +10,7 @@ export default function Navbar() {
   const pathname = usePathname();
   return (
     <nav className="sticky top-0 z-20 backdrop-blur-md bg-white/60 border-b border-gray-200/10 shadow-sm">
-      <div className="max-w-7xl mx-auto px-2">
+      <div className="max-w-8xl mx-auto px-2">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
@@ -21,7 +21,7 @@ export default function Navbar() {
                 height={48}
                 className="rounded-full"
               />
-              <span className="ml-3 text-lg font-semibold text-gray-900">
+              <span className="ml-1 text-lg font-semibold text-gray-900">
                 পদ্মা ফিশিং নেট
               </span>
             </Link>
