@@ -4,9 +4,8 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Main Content */}
-      <div className="relative">
-        <WorkerList />
-      </div>
+
+      <WorkerList />
     </main>
   );
 }

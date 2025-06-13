@@ -194,7 +194,9 @@ export default function WorkerList() {
       {/* Main Header */}
       <div className="bg-white border-b border-gray-200/50">
         <div className="max-w-7xl mx-auto py-8 px-6">
-          <h2 className="text-3xl font-bold mb-4 text-gray-800">কর্মীদের তালিকা</h2>
+          <h2 className="text-xl font-bold mb-4 text-gray-800">
+            কর্মীদের তালিকা
+          </h2>
           <div className="flex flex-wrap gap-4 text-sm text-gray-500">
             <p>মোট কর্মী: {realWorkers.length} জন</p>
             {Object.entries(workersByLocation).map(([location, count]) => (
@@ -252,7 +254,7 @@ export default function WorkerList() {
                     <div className="flex flex-col gap-4">
                       <div className="flex items-center gap-4">
                         <Avatar
-                          size={56}
+                        
                           icon={<UserOutlined />}
                           className="bg-gradient-to-r from-blue-500 to-blue-600 flex-shrink-0 transition-transform group-hover:scale-110"
                         />
@@ -262,13 +264,14 @@ export default function WorkerList() {
                               <h3 className="text-lg font-semibold text-gray-800 break-words">
                                 {worker.name}
                               </h3>
-                            </div>                              <Badge
-                                count="Active"
-                                className="scale-90"
-                                style={{
-                                  backgroundColor: "#10B981",
-                                  fontWeight: 500,
-                                }}
+                            </div>{" "}
+                            <Badge
+                              count="Active"
+                              className="scale-90"
+                              style={{
+                                backgroundColor: "#10B981",
+                                fontWeight: 500,
+                              }}
                             />
                           </div>
                         </div>

@@ -1,12 +1,18 @@
 "use client";
 
-import { Card, Avatar, Statistic } from "antd";
+import { Card, Avatar, Statistic, Tag,  } from "antd";
 import { HiIdentification } from "react-icons/hi";
-import { FaTasks, FaCheckCircle } from "react-icons/fa";
-import { BsClockHistory } from "react-icons/bs";
+
 import { BiMoney, BiMoneyWithdraw } from "react-icons/bi";
 import { MdPendingActions } from "react-icons/md";
+
 import { Task } from "@/types/worker";
+import {
+  CheckCircleOutlined,
+  UnorderedListOutlined,
+  ExclamationCircleOutlined,
+  SyncOutlined,
+} from "@ant-design/icons";
 
 interface WorkerHeaderProps {
   workerId: string;
@@ -30,46 +36,44 @@ export default function WorkerHeader({
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           <Avatar
-            size={64}
             icon={<HiIdentification className="text-3xl" />}
             className="bg-gradient-to-r from-blue-500 to-blue-600"
           />
           <div>
-            <h2 className="text-xl font-bold text-gray-800">
+            <h2 className="font-bold text-gray-800">
               {name || "কর্মীর বিস্তারিত"}
             </h2>
-            <p className="text-gray-500">Worker ID: #{workerId}</p>
+            <p className="text-gray-500">Worker ID: {workerId}</p>
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-3">
-          <Card className="!px-4 !py-2 rounded-full bg-blue-50 border-blue-100 shadow-none">
-            <div className="flex items-center gap-2">
-              <FaTasks className="text-blue-600" />
-              <p className="text-blue-600 font-medium">
-                মোট কাজ: {tasks.length}
-              </p>
-            </div>
-          </Card>
-          <Card className="!px-4 !py-2 rounded-full bg-green-50 border-green-100 shadow-none">
-            <div className="flex items-center gap-2">
-              <FaCheckCircle className="text-green-600" />
-              <p className="text-green-600 font-medium">
-                সম্পন্ন:{" "}
-                {tasks.filter((task) => task.status === "complete").length}
-              </p>
-            </div>
-          </Card>
-          <Card className="!px-4 !py-2 rounded-full bg-amber-50 border-amber-100 shadow-none">
-            <div className="flex items-center gap-2">
-              <BsClockHistory className="text-amber-600" />
-              <p className="text-amber-600 font-medium">
-                চলমান:{" "}
-                {tasks.filter((task) => task.status === "partial").length}
-              </p>
-            </div>
-          </Card>
-        </div>
+        
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3" >
+          <Tag
+            bordered={false}
+            icon={<UnorderedListOutlined />}
+            color="geekblue"
+          >
+            মোট কাজ: {tasks.length}
+          </Tag>
+
+          <Tag bordered={false} icon={<CheckCircleOutlined />} color="success">
+            সম্পন্ন: {tasks.filter((task) => task.status === "complete").length}
+          </Tag>
+
+          <Tag bordered={false} icon={<SyncOutlined  />} color="processing">
+            চলমান: {tasks.filter((task) => task.status === "partial").length}
+          </Tag>
+
+          <Tag
+            bordered={false}
+            icon={<ExclamationCircleOutlined />}
+            color="error"
+          >
+            বাকি: {tasks.filter((task) => task.status === "pending").length}
+          </Tag>
+           </div>
+        
       </div>
 
       {/* Financial Stats */}
@@ -80,7 +84,7 @@ export default function WorkerHeader({
               icon={<BiMoney className="text-xl" />}
               className="!bg-purple-100 !text-purple-600"
             />
-            <Statistic
+            <Statistic 
               title={<span className="text-purple-600">মোট টাকা</span>}
               value={totalAmount}
               prefix="৳"

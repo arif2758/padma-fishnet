@@ -54,6 +54,7 @@ export default function WorkerProfile() {
   return (
     <div className="p-6 mx-auto space-y-8">
       <WorkerHeader workerId="WP123" name="আব্দুল করিম" tasks={data} />
+      <br />
       <WorkerTasksTable tasks={data} />
     </div>
   );

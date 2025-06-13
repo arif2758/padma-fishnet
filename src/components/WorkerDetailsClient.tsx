@@ -12,7 +12,7 @@ const data: Task[] = [
     issueDate: "2025-06-01",
     issueQuantity: 10,
     issueUnit: "পিস",
-    submitDate: "2025-06-05",
+    submitDate: "2025-06-05", 
     submitQuantity: 10,
     submitUnit: "পিস",
     comment: "সমাপ্ত",
@@ -60,6 +60,7 @@ export default function WorkerDetailsClient({
   return (
     <div className="p-4">
       <WorkerHeader workerId={workerSlug} tasks={data} />
+      <br />
       <WorkerTasksTable tasks={data} />
     </div>
   );
