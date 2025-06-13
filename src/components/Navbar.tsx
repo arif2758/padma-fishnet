@@ -8,23 +8,23 @@ export default function Navbar() {
   const pathname = usePathname();
   return (
     <nav className="sticky top-0 z-20 backdrop-blur-md bg-white/60 border-b border-gray-200/10 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl  px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Image
                 src="/logo-padma-fishing-net.png"
                 alt="পদ্মা ফিশিং নেট"
-                width={40}
-                height={40}
-                className="rounded-lg"
+                width={48} 
+                height={48}
+                className="rounded-full"
               />
               <span className="ml-3 text-lg font-semibold text-gray-900">
                 পদ্মা ফিশিং নেট
               </span>
             </Link>
           </div>
-          <div className="flex space-x-4">
+          <div className="flex ">
             <Link
               href="/"
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
