@@ -1,8 +1,16 @@
 "use client";
 
 import { Tag } from "antd";
-
 import { Task } from "@/types/worker";
+import {
+  FaList,
+  FaCalendarAlt,
+  FaBox,
+  FaRegCommentDots,
+  FaTasks,
+} from "react-icons/fa";
+import { BiMoney } from "react-icons/bi";
+import { MdPayments } from "react-icons/md";
 
 interface WorkerTasksTableProps {
   tasks: Task[];
@@ -25,7 +33,8 @@ export default function WorkerTasksTable({
       className={`bg-white rounded-lg shadow-sm border border-gray-200/50 overflow-hidden ${containerClassName}`}
     >
       <div className="p-4 bg-gray-50 border-b border-gray-200/50">
-        <h3 className="text-lg font-semibold text-gray-800">
+        <h3 className="flex items-center gap-2 text-lg font-semibold text-gray-800">
+          <FaTasks />
           সকল কাজের তালিকা
         </h3>
       </div>
@@ -34,34 +43,55 @@ export default function WorkerTasksTable({
           <thead className="bg-gray-50">
             <tr>
               <th className="py-3 px-4 text-left text-sm font-semibold text-gray-900">
-                Task No
+                <div className="flex items-center gap-1">
+                  <FaList className="text-gray-600" />
+                  Task No
+                </div>
               </th>
               <th className="py-3 px-4 text-left text-sm font-semibold text-gray-900">
-                আইটেম
+                <div className="flex items-center gap-1">
+                  <FaBox className="text-gray-600" />
+                  আইটেম
+                </div>
               </th>
               <th className="py-3 px-4 text-left text-sm font-semibold text-gray-900">
-                ইস্যু তারিখ
+                <div className="flex items-center gap-1">
+                  <FaCalendarAlt className="text-gray-600" />
+                  ইস্যু তারিখ
+                </div>
               </th>
               <th className="py-3 px-4 text-left text-sm font-semibold text-gray-900">
                 পরিমাণ
               </th>
               <th className="py-3 px-4 text-left text-sm font-semibold text-gray-900">
-                জমা তারিখ
+                <div className="flex items-center gap-1">
+                  <FaCalendarAlt className="text-gray-600" />
+                  জমা তারিখ
+                </div>
               </th>
               <th className="py-3 px-4 text-left text-sm font-semibold text-gray-900">
                 পরিমাণ
               </th>
               <th className="py-3 px-4 text-left text-sm font-semibold text-gray-900">
-                মন্তব্য
+                <div className="flex items-center gap-1">
+                  <FaRegCommentDots className="text-gray-600" />
+                  মন্তব্য
+                </div>
               </th>
               <th className="py-3 px-4 text-left text-sm font-semibold text-gray-900">
                 স্ট্যাটাস
               </th>
               <th className="py-3 px-4 text-left text-sm font-semibold text-gray-900">
-                মূল্য
+                <div className="flex items-center gap-1">
+                  <BiMoney className="text-gray-600" />
+                  মূল্য
+                </div>
               </th>
               <th className="py-3 px-4 text-left text-sm font-semibold text-gray-900">
-                পেমেন্ট
+                <div className="flex items-center gap-1">
+                  <MdPayments className="text-gray-600" />
+                  পেমেন্ট
+                </div>
               </th>
             </tr>
           </thead>
