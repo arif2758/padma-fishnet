@@ -51,15 +51,15 @@ const data: Task[] = [
 ];
 
 interface WorkerDetailsClientProps {
-  workerId: string;
+  workerSlug: string;
 }
 
 export default function WorkerDetailsClient({
-  workerId,
+  workerSlug,
 }: WorkerDetailsClientProps) {
   return (
     <div className="p-4">
-      <WorkerHeader workerId={workerId} tasks={data} />
+      <WorkerHeader workerId={workerSlug} tasks={data} />
       <WorkerTasksTable tasks={data} />
     </div>
   );
