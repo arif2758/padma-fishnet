@@ -1,11 +1,12 @@
-import WorkerProfile from "@/components/WorkerProfile"
+import UserDetailsComponent from "@/components/UserDetailsComponent"
 
-function WorkerProfilePage() {
+
+function UserProfilePage() {
   return (
     <div>
-        <WorkerProfile/>
+        <UserDetailsComponent userId = {"103"} />
     </div>
   )
 }
 
-export default WorkerProfilePage
+export default UserProfilePage

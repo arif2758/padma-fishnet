@@ -1,0 +1,882 @@
+[
+  {
+    "_id": {
+      "$oid": "572eb7ba0c464b70aea84bdc"
+    },
+
+    "itemName": "পকেট সেলাই",
+    "issuDate": "2025-05-29T08:38:07.851439",
+    "itemQuantity": 18,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-03T08:38:07.851439",
+    "submitQuantity": 13,
+    "submitUnit": "pcs",
+    "comment": "Task note 1",
+    "taskStatus": "processing",
+    "taskPrice": 410,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "76669fbf23a748c9846ae3f5"
+    },
+    "createdAt": "2025-06-15T08:38:07.851511",
+    "updatedAt": "2025-06-15T08:38:07.851513"
+  },
+  {
+    "_id": {
+      "$oid": "028d7670bf2149bdbbf157f8"
+    },
+
+    "itemName": "মেইন জালের বডি সেলাই",
+    "issuDate": "2025-05-27T08:38:07.851517",
+    "itemQuantity": 18,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-01T08:38:07.851517",
+    "submitQuantity": 11,
+    "submitUnit": "pcs",
+    "comment": "Task note 2",
+    "taskStatus": "complete",
+    "taskPrice": 259,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "5eeb4aa3d4774bac811d03ea"
+    },
+    "createdAt": "2025-06-15T08:38:07.851551",
+    "updatedAt": "2025-06-15T08:38:07.851553"
+  },
+  {
+    "_id": {
+      "$oid": "ffdcef26d87e4253b0dd0627"
+    },
+
+    "itemName": "গিটার বাঁধা",
+    "issuDate": "2025-05-31T08:38:07.851557",
+    "itemQuantity": 9,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-03T08:38:07.851557",
+    "submitQuantity": 17,
+    "submitUnit": "pcs",
+    "comment": "Task note 3",
+    "taskStatus": "partial",
+    "taskPrice": 120,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "9cb81af334aa4aa5bc0a99db"
+    },
+    "createdAt": "2025-06-15T08:38:07.851595",
+    "updatedAt": "2025-06-15T08:38:07.851597"
+  },
+  {
+    "_id": {
+      "$oid": "d7c5a5ed44f34c90af7ccc5c"
+    },
+
+    "itemName": "ভাঁজ করা রডের দুই প্রান্ত বাঁধা",
+    "issuDate": "2025-05-26T08:38:07.851600",
+    "itemQuantity": 18,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-01T08:38:07.851600",
+    "submitQuantity": 10,
+    "submitUnit": "pcs",
+    "comment": "Task note 4",
+    "taskStatus": "processing",
+    "taskPrice": 336,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "998e6d5d5a0b408eb0f76fe3"
+    },
+    "createdAt": "2025-06-15T08:38:07.851630",
+    "updatedAt": "2025-06-15T08:38:07.851633"
+  },
+  {
+    "_id": {
+      "$oid": "a65a0765483f4a28b80fc235"
+    },
+
+    "itemName": "পাইপযুক্ত রড ভাঁজ করা",
+    "issuDate": "2025-06-04T08:38:07.851638",
+    "itemQuantity": 13,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-13T08:38:07.851638",
+    "submitQuantity": 20,
+    "submitUnit": "pcs",
+    "comment": "Task note 5",
+    "taskStatus": "partial",
+    "taskPrice": 426,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "526ab06f3d1d476e9b50d6a8"
+    },
+    "createdAt": "2025-06-15T08:38:07.851669",
+    "updatedAt": "2025-06-15T08:38:07.851671"
+  },
+  {
+    "_id": {
+      "$oid": "fd96099180ee427db57260fe"
+    },
+
+    "itemName": "পাইপে রড ভরা",
+    "issuDate": "2025-05-17T08:38:07.851675",
+    "itemQuantity": 20,
+    "itemUnit": "pcs",
+    "submitDate": "2025-05-25T08:38:07.851675",
+    "submitQuantity": 9,
+    "submitUnit": "pcs",
+    "comment": "Task note 6",
+    "taskStatus": "partial",
+    "taskPrice": 356,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "bc4dc36cc3024b3ba0df1d84"
+    },
+    "createdAt": "2025-06-15T08:38:07.851701",
+    "updatedAt": "2025-06-15T08:38:07.851703"
+  },
+  {
+    "_id": {
+      "$oid": "defb327eee5245ab801c3472"
+    },
+
+    "itemName": "পাইপে রড ভরা",
+    "issuDate": "2025-06-14T08:38:07.851706",
+    "itemQuantity": 13,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-17T08:38:07.851706",
+    "submitQuantity": 9,
+    "submitUnit": "pcs",
+    "comment": "Task note 7",
+    "taskStatus": "processing",
+    "taskPrice": 418,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "76c0efe2a45c4eff97aaafa7"
+    },
+    "createdAt": "2025-06-15T08:38:07.851735",
+    "updatedAt": "2025-06-15T08:38:07.851737"
+  },
+  {
+    "_id": {
+      "$oid": "6650a8a4fdfd48e28721dc2f"
+    },
+
+    "itemName": "পাইপযুক্ত রড ভাঁজ করা",
+    "issuDate": "2025-05-21T08:38:07.851742",
+    "itemQuantity": 17,
+    "itemUnit": "pcs",
+    "submitDate": "2025-05-28T08:38:07.851742",
+    "submitQuantity": 5,
+    "submitUnit": "pcs",
+    "comment": "Task note 8",
+    "taskStatus": "processing",
+    "taskPrice": 394,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "7fa64b7d3c934ade8d725d2d"
+    },
+    "createdAt": "2025-06-15T08:38:07.851776",
+    "updatedAt": "2025-06-15T08:38:07.851780"
+  },
+  {
+    "_id": {
+      "$oid": "04c2539b84b44ba6ba65abf2"
+    },
+
+    "itemName": "ভাঁজ করা রডের দুই প্রান্ত বাঁধা",
+    "issuDate": "2025-05-29T08:38:07.851785",
+    "itemQuantity": 14,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-08T08:38:07.851785",
+    "submitQuantity": 11,
+    "submitUnit": "pcs",
+    "comment": "Task note 9",
+    "taskStatus": "complete",
+    "taskPrice": 109,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "30cad1ae44b0425f80c45f40"
+    },
+    "createdAt": "2025-06-15T08:38:07.851823",
+    "updatedAt": "2025-06-15T08:38:07.851826"
+  },
+  {
+    "_id": {
+      "$oid": "9031cf3b9e7741ee9edc83dd"
+    },
+
+    "itemName": "গিটার বাঁধা",
+    "issuDate": "2025-05-31T08:38:07.851829",
+    "itemQuantity": 5,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-03T08:38:07.851829",
+    "submitQuantity": 16,
+    "submitUnit": "pcs",
+    "comment": "Task note 10",
+    "taskStatus": "complete",
+    "taskPrice": 187,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "72560978218f42808b52d74b"
+    },
+    "createdAt": "2025-06-15T08:38:07.851857",
+    "updatedAt": "2025-06-15T08:38:07.851859"
+  },
+  {
+    "_id": {
+      "$oid": "d8a5f5560d2e42cb9713a2a8"
+    },
+
+    "itemName": "মেইন জালের বডি সেলাই",
+    "issuDate": "2025-06-12T08:38:07.851862",
+    "itemQuantity": 20,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-13T08:38:07.851862",
+    "submitQuantity": 13,
+    "submitUnit": "pcs",
+    "comment": "Task note 11",
+    "taskStatus": "processing",
+    "taskPrice": 210,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "e6e619cd66c74a278bc5fb7d"
+    },
+    "createdAt": "2025-06-15T08:38:07.851896",
+    "updatedAt": "2025-06-15T08:38:07.851899"
+  },
+  {
+    "_id": {
+      "$oid": "47aa69fb93c340558eca1c3f"
+    },
+
+    "itemName": "পকেট সেলাই",
+    "issuDate": "2025-05-17T08:38:07.851903",
+    "itemQuantity": 11,
+    "itemUnit": "pcs",
+    "submitDate": "2025-05-24T08:38:07.851903",
+    "submitQuantity": 10,
+    "submitUnit": "pcs",
+    "comment": "Task note 12",
+    "taskStatus": "processing",
+    "taskPrice": 171,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "69f8f2f7912a4263901c0694"
+    },
+    "createdAt": "2025-06-15T08:38:07.851940",
+    "updatedAt": "2025-06-15T08:38:07.851942"
+  },
+  {
+    "_id": {
+      "$oid": "e1103a6642674d288220fa2f"
+    },
+
+    "itemName": "ক্রস সেলাই",
+    "issuDate": "2025-06-14T08:38:07.851945",
+    "itemQuantity": 9,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-19T08:38:07.851945",
+    "submitQuantity": 17,
+    "submitUnit": "pcs",
+    "comment": "Task note 13",
+    "taskStatus": "processing",
+    "taskPrice": 455,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "518ea91d187a4757b82a1b98"
+    },
+    "createdAt": "2025-06-15T08:38:07.851961",
+    "updatedAt": "2025-06-15T08:38:07.851963"
+  },
+  {
+    "_id": {
+      "$oid": "7e06dcc24e274c268c2ed7dc"
+    },
+
+    "itemName": "লাস্ট গেইট",
+    "issuDate": "2025-05-30T08:38:07.851966",
+    "itemQuantity": 12,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-04T08:38:07.851966",
+    "submitQuantity": 8,
+    "submitUnit": "pcs",
+    "comment": "Task note 14",
+    "taskStatus": "processing",
+    "taskPrice": 142,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "5c9e301bd7824152a33fc871"
+    },
+    "createdAt": "2025-06-15T08:38:07.851993",
+    "updatedAt": "2025-06-15T08:38:07.851995"
+  },
+  {
+    "_id": {
+      "$oid": "7ead205800074e79b99b1da9"
+    },
+
+    "itemName": "লেজের বডি সেলাই",
+    "issuDate": "2025-05-16T08:38:07.851998",
+    "itemQuantity": 20,
+    "itemUnit": "pcs",
+    "submitDate": "2025-05-25T08:38:07.851998",
+    "submitQuantity": 20,
+    "submitUnit": "pcs",
+    "comment": "Task note 15",
+    "taskStatus": "complete",
+    "taskPrice": 298,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "41e177974b2e4452a5de35f2"
+    },
+    "createdAt": "2025-06-15T08:38:07.852033",
+    "updatedAt": "2025-06-15T08:38:07.852035"
+  },
+  {
+    "_id": {
+      "$oid": "a602c0141fde4c2186b17131"
+    },
+
+    "itemName": "রিং এর জাল সেলাই",
+    "issuDate": "2025-05-16T08:38:07.852038",
+    "itemQuantity": 11,
+    "itemUnit": "pcs",
+    "submitDate": "2025-05-21T08:38:07.852038",
+    "submitQuantity": 6,
+    "submitUnit": "pcs",
+    "comment": "Task note 16",
+    "taskStatus": "partial",
+    "taskPrice": 455,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "6c56078364eb428cbf819955"
+    },
+    "createdAt": "2025-06-15T08:38:07.852063",
+    "updatedAt": "2025-06-15T08:38:07.852065"
+  },
+  {
+    "_id": {
+      "$oid": "d5c33749b2e844f380325642"
+    },
+
+    "itemName": "রিংজাল তৈরি",
+    "issuDate": "2025-05-16T08:38:07.852068",
+    "itemQuantity": 5,
+    "itemUnit": "pcs",
+    "submitDate": "2025-05-22T08:38:07.852068",
+    "submitQuantity": 12,
+    "submitUnit": "pcs",
+    "comment": "Task note 17",
+    "taskStatus": "complete",
+    "taskPrice": 368,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "607444f0a50d43b8b5801048"
+    },
+    "createdAt": "2025-06-15T08:38:07.852092",
+    "updatedAt": "2025-06-15T08:38:07.852094"
+  },
+  {
+    "_id": {
+      "$oid": "5533b1c663b242d9b8253bee"
+    },
+
+    "itemName": "লেজের খাঁচি তৈরি",
+    "issuDate": "2025-06-01T08:38:07.852097",
+    "itemQuantity": 19,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-03T08:38:07.852097",
+    "submitQuantity": 6,
+    "submitUnit": "pcs",
+    "comment": "Task note 18",
+    "taskStatus": "complete",
+    "taskPrice": 199,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "4010ad2a02b54b7e89e55bf3"
+    },
+    "createdAt": "2025-06-15T08:38:07.852122",
+    "updatedAt": "2025-06-15T08:38:07.852124"
+  },
+  {
+    "_id": {
+      "$oid": "4712af7b236f4c8aa686c6eb"
+    },
+
+    "itemName": "লেজ ফিটিং",
+    "issuDate": "2025-06-08T08:38:07.852127",
+    "itemQuantity": 13,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-18T08:38:07.852127",
+    "submitQuantity": 13,
+    "submitUnit": "pcs",
+    "comment": "Task note 19",
+    "taskStatus": "partial",
+    "taskPrice": 229,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "2dd65e2bbbc74f199a3f73c3"
+    },
+    "createdAt": "2025-06-15T08:38:07.852152",
+    "updatedAt": "2025-06-15T08:38:07.852154"
+  },
+  {
+    "_id": {
+      "$oid": "29bdc7ca461a48d5ab070b67"
+    },
+
+    "itemName": "দোয়াইর তৈরি",
+    "issuDate": "2025-06-04T08:38:07.852157",
+    "itemQuantity": 20,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-06T08:38:07.852157",
+    "submitQuantity": 16,
+    "submitUnit": "pcs",
+    "comment": "Task note 20",
+    "taskStatus": "complete",
+    "taskPrice": 430,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "db806c885e8445159da3c4ad"
+    },
+    "createdAt": "2025-06-15T08:38:07.852197",
+    "updatedAt": "2025-06-15T08:38:07.852199"
+  },
+  {
+    "_id": {
+      "$oid": "317f6774071845668b55f5c7"
+    },
+
+    "itemName": "দোয়াইরের সাথে লেজের জয়েন দেওয়া",
+    "issuDate": "2025-05-31T08:38:07.852202",
+    "itemQuantity": 6,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-03T08:38:07.852202",
+    "submitQuantity": 13,
+    "submitUnit": "pcs",
+    "comment": "Task note 21",
+    "taskStatus": "partial",
+    "taskPrice": 353,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "76669fbf23a748c9846ae3f5"
+    },
+    "createdAt": "2025-06-15T08:38:07.852231",
+    "updatedAt": "2025-06-15T08:38:07.852233"
+  },
+  {
+    "_id": {
+      "$oid": "a0fa003f1fa34fc688644c48"
+    },
+
+    "itemName": "কম্প্রেস করে বাঁধা",
+    "issuDate": "2025-06-09T08:38:07.852236",
+    "itemQuantity": 20,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-11T08:38:07.852236",
+    "submitQuantity": 12,
+    "submitUnit": "pcs",
+    "comment": "Task note 22",
+    "taskStatus": "complete",
+    "taskPrice": 348,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "5eeb4aa3d4774bac811d03ea"
+    },
+    "createdAt": "2025-06-15T08:38:07.852269",
+    "updatedAt": "2025-06-15T08:38:07.852273"
+  },
+  {
+    "_id": {
+      "$oid": "5d8f09622f87487cba2f3a22"
+    },
+
+    "itemName": "প্যাকেজিং করা",
+    "issuDate": "2025-06-07T08:38:07.852277",
+    "itemQuantity": 13,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-15T08:38:07.852277",
+    "submitQuantity": 13,
+    "submitUnit": "pcs",
+    "comment": "Task note 23",
+    "taskStatus": "partial",
+    "taskPrice": 269,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "9cb81af334aa4aa5bc0a99db"
+    },
+    "createdAt": "2025-06-15T08:38:07.852317",
+    "updatedAt": "2025-06-15T08:38:07.852319"
+  },
+  {
+    "_id": {
+      "$oid": "2ae388e91eec403591c48458"
+    },
+
+    "itemName": "প্যাকেজিং করা",
+    "issuDate": "2025-06-11T08:38:07.852321",
+    "itemQuantity": 17,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-12T08:38:07.852321",
+    "submitQuantity": 11,
+    "submitUnit": "pcs",
+    "comment": "Task note 24",
+    "taskStatus": "processing",
+    "taskPrice": 152,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "998e6d5d5a0b408eb0f76fe3"
+    },
+    "createdAt": "2025-06-15T08:38:07.852353",
+    "updatedAt": "2025-06-15T08:38:07.852355"
+  },
+  {
+    "_id": {
+      "$oid": "82be1f57039a43668d662121"
+    },
+
+    "itemName": "কম্প্রেস করে বাঁধা",
+    "issuDate": "2025-06-07T08:38:07.852357",
+    "itemQuantity": 17,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-13T08:38:07.852357",
+    "submitQuantity": 6,
+    "submitUnit": "pcs",
+    "comment": "Task note 25",
+    "taskStatus": "processing",
+    "taskPrice": 461,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "526ab06f3d1d476e9b50d6a8"
+    },
+    "createdAt": "2025-06-15T08:38:07.852390",
+    "updatedAt": "2025-06-15T08:38:07.852392"
+  },
+  {
+    "_id": {
+      "$oid": "4b977760eadd4e869ab5379e"
+    },
+
+    "itemName": "দোয়াইরের সাথে লেজের জয়েন দেওয়া",
+    "issuDate": "2025-05-27T08:38:07.852395",
+    "itemQuantity": 5,
+    "itemUnit": "pcs",
+    "submitDate": "2025-05-30T08:38:07.852395",
+    "submitQuantity": 10,
+    "submitUnit": "pcs",
+    "comment": "Task note 26",
+    "taskStatus": "processing",
+    "taskPrice": 320,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "bc4dc36cc3024b3ba0df1d84"
+    },
+    "createdAt": "2025-06-15T08:38:07.852421",
+    "updatedAt": "2025-06-15T08:38:07.852423"
+  },
+  {
+    "_id": {
+      "$oid": "e8aeb48f41304d458920bdb2"
+    },
+
+    "itemName": "দোয়াইর তৈরি",
+    "issuDate": "2025-05-22T08:38:07.852426",
+    "itemQuantity": 15,
+    "itemUnit": "pcs",
+    "submitDate": "2025-05-24T08:38:07.852426",
+    "submitQuantity": 4,
+    "submitUnit": "pcs",
+    "comment": "Task note 27",
+    "taskStatus": "processing",
+    "taskPrice": 445,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "76c0efe2a45c4eff97aaafa7"
+    },
+    "createdAt": "2025-06-15T08:38:07.852450",
+    "updatedAt": "2025-06-15T08:38:07.852452"
+  },
+  {
+    "_id": {
+      "$oid": "4a083cb4111b45f7ab21cb32"
+    },
+
+    "itemName": "লেজ ফিটিং",
+    "issuDate": "2025-06-01T08:38:07.852455",
+    "itemQuantity": 17,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-02T08:38:07.852455",
+    "submitQuantity": 8,
+    "submitUnit": "pcs",
+    "comment": "Task note 28",
+    "taskStatus": "complete",
+    "taskPrice": 332,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "7fa64b7d3c934ade8d725d2d"
+    },
+    "createdAt": "2025-06-15T08:38:07.852480",
+    "updatedAt": "2025-06-15T08:38:07.852482"
+  },
+  {
+    "_id": {
+      "$oid": "5ae2856ddc9b473ca8bc5f80"
+    },
+
+    "itemName": "লেজের খাঁচি তৈরি",
+    "issuDate": "2025-06-07T08:38:07.852484",
+    "itemQuantity": 19,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-12T08:38:07.852484",
+    "submitQuantity": 19,
+    "submitUnit": "pcs",
+    "comment": "Task note 29",
+    "taskStatus": "complete",
+    "taskPrice": 224,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "30cad1ae44b0425f80c45f40"
+    },
+    "createdAt": "2025-06-15T08:38:07.852517",
+    "updatedAt": "2025-06-15T08:38:07.852520"
+  },
+  {
+    "_id": {
+      "$oid": "c8a20b59e294445590b09f70"
+    },
+
+    "itemName": "রিংজাল তৈরি",
+    "issuDate": "2025-06-01T08:38:07.852525",
+    "itemQuantity": 10,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-02T08:38:07.852525",
+    "submitQuantity": 16,
+    "submitUnit": "pcs",
+    "comment": "Task note 30",
+    "taskStatus": "processing",
+    "taskPrice": 403,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "72560978218f42808b52d74b"
+    },
+    "createdAt": "2025-06-15T08:38:07.852564",
+    "updatedAt": "2025-06-15T08:38:07.852567"
+  },
+  {
+    "_id": {
+      "$oid": "512776546d9d4e759a190aee"
+    },
+
+    "itemName": "রিং এর জাল সেলাই",
+    "issuDate": "2025-05-23T08:38:07.852572",
+    "itemQuantity": 14,
+    "itemUnit": "pcs",
+    "submitDate": "2025-05-25T08:38:07.852572",
+    "submitQuantity": 12,
+    "submitUnit": "pcs",
+    "comment": "Task note 31",
+    "taskStatus": "complete",
+    "taskPrice": 177,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "e6e619cd66c74a278bc5fb7d"
+    },
+    "createdAt": "2025-06-15T08:38:07.852618",
+    "updatedAt": "2025-06-15T08:38:07.852620"
+  },
+  {
+    "_id": {
+      "$oid": "d634c33d41e04d8694159a23"
+    },
+
+    "itemName": "লেজের বডি সেলাই",
+    "issuDate": "2025-06-13T08:38:07.852623",
+    "itemQuantity": 16,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-16T08:38:07.852623",
+    "submitQuantity": 14,
+    "submitUnit": "pcs",
+    "comment": "Task note 32",
+    "taskStatus": "processing",
+    "taskPrice": 298,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "69f8f2f7912a4263901c0694"
+    },
+    "createdAt": "2025-06-15T08:38:07.852661",
+    "updatedAt": "2025-06-15T08:38:07.852663"
+  },
+  {
+    "_id": {
+      "$oid": "1221d5b4176841b5989d9e90"
+    },
+
+    "itemName": "লাস্ট গেইট",
+    "issuDate": "2025-05-21T08:38:07.852666",
+    "itemQuantity": 15,
+    "itemUnit": "pcs",
+    "submitDate": "2025-05-27T08:38:07.852666",
+    "submitQuantity": 10,
+    "submitUnit": "pcs",
+    "comment": "Task note 33",
+    "taskStatus": "partial",
+    "taskPrice": 340,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "518ea91d187a4757b82a1b98"
+    },
+    "createdAt": "2025-06-15T08:38:07.852692",
+    "updatedAt": "2025-06-15T08:38:07.852694"
+  },
+  {
+    "_id": {
+      "$oid": "1e2e0982627a4f1486ffa0e0"
+    },
+
+    "itemName": "ক্রস সেলাই",
+    "issuDate": "2025-05-29T08:38:07.852699",
+    "itemQuantity": 12,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-03T08:38:07.852699",
+    "submitQuantity": 5,
+    "submitUnit": "pcs",
+    "comment": "Task note 34",
+    "taskStatus": "complete",
+    "taskPrice": 197,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "5c9e301bd7824152a33fc871"
+    },
+    "createdAt": "2025-06-15T08:38:07.852730",
+    "updatedAt": "2025-06-15T08:38:07.852733"
+  },
+  {
+    "_id": {
+      "$oid": "d29a3c5d0d4d49dcb9804bd0"
+    },
+
+    "itemName": "পকেট সেলাই",
+    "issuDate": "2025-05-16T08:38:07.852736",
+    "itemQuantity": 8,
+    "itemUnit": "pcs",
+    "submitDate": "2025-05-17T08:38:07.852736",
+    "submitQuantity": 19,
+    "submitUnit": "pcs",
+    "comment": "Task note 35",
+    "taskStatus": "partial",
+    "taskPrice": 128,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "41e177974b2e4452a5de35f2"
+    },
+    "createdAt": "2025-06-15T08:38:07.852763",
+    "updatedAt": "2025-06-15T08:38:07.852765"
+  },
+  {
+    "_id": {
+      "$oid": "fc7ec5af60104e1498cf4d82"
+    },
+
+    "itemName": "মেইন জালের বডি সেলাই",
+    "issuDate": "2025-05-17T08:38:07.852768",
+    "itemQuantity": 16,
+    "itemUnit": "pcs",
+    "submitDate": "2025-05-20T08:38:07.852768",
+    "submitQuantity": 4,
+    "submitUnit": "pcs",
+    "comment": "Task note 36",
+    "taskStatus": "complete",
+    "taskPrice": 460,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "6c56078364eb428cbf819955"
+    },
+    "createdAt": "2025-06-15T08:38:07.852807",
+    "updatedAt": "2025-06-15T08:38:07.852809"
+  },
+  {
+    "_id": {
+      "$oid": "ad865cfe41224bc982e317aa"
+    },
+
+    "itemName": "গিটার বাঁধা",
+    "issuDate": "2025-05-28T08:38:07.852812",
+    "itemQuantity": 20,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-01T08:38:07.852812",
+    "submitQuantity": 17,
+    "submitUnit": "pcs",
+    "comment": "Task note 37",
+    "taskStatus": "partial",
+    "taskPrice": 326,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "607444f0a50d43b8b5801048"
+    },
+    "createdAt": "2025-06-15T08:38:07.852852",
+    "updatedAt": "2025-06-15T08:38:07.852855"
+  },
+  {
+    "_id": {
+      "$oid": "8894541c0ebe47e0bf7638c5"
+    },
+
+    "itemName": "ভাঁজ করা রডের দুই প্রান্ত বাঁধা",
+    "issuDate": "2025-06-13T08:38:07.852859",
+    "itemQuantity": 6,
+    "itemUnit": "pcs",
+    "submitDate": "2025-06-15T08:38:07.852859",
+    "submitQuantity": 11,
+    "submitUnit": "pcs",
+    "comment": "Task note 38",
+    "taskStatus": "partial",
+    "taskPrice": 455,
+    "taskPayment": "unpaid",
+    "assignedTo": {
+      "$oid": "4010ad2a02b54b7e89e55bf3"
+    },
+    "createdAt": "2025-06-15T08:38:07.852892",
+    "updatedAt": "2025-06-15T08:38:07.852894"
+  },
+  {
+    "_id": {
+      "$oid": "0cf813fc80c94845b0c422e9"
+    },
+
+    "itemName": "পাইপযুক্ত রড ভাঁজ করা",
+    "issuDate": "2025-05-26T08:38:07.852898",
+    "itemQuantity": 9,
+    "itemUnit": "pcs",
+    "submitDate": "2025-05-31T08:38:07.852898",
+    "submitQuantity": 3,
+    "submitUnit": "pcs",
+    "comment": "Task note 39",
+    "taskStatus": "partial",
+    "taskPrice": 146,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "2dd65e2bbbc74f199a3f73c3"
+    },
+    "createdAt": "2025-06-15T08:38:07.852929",
+    "updatedAt": "2025-06-15T08:38:07.852931"
+  },
+  {
+    "_id": {
+      "$oid": "24283dfce3eb41aebecc6b9b"
+    },
+
+    "itemName": "পাইপে রড ভরা",
+    "issuDate": "2025-05-26T08:38:07.852934",
+    "itemQuantity": 8,
+    "itemUnit": "pcs",
+    "submitDate": "2025-05-29T08:38:07.852934",
+    "submitQuantity": 12,
+    "submitUnit": "pcs",
+    "comment": "Task note 40",
+    "taskStatus": "partial",
+    "taskPrice": 127,
+    "taskPayment": "paid",
+    "assignedTo": {
+      "$oid": "db806c885e8445159da3c4ad"
+    },
+    "createdAt": "2025-06-15T08:38:07.852965",
+    "updatedAt": "2025-06-15T08:38:07.852968"
+  }
+]

@@ -1,0 +1,562 @@
+[
+  {
+    "_id": {
+      "$oid": "76669fbf23a748c9846ae3f5"
+    },
+    "userId": "1",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=0",
+    "userName": "User 1",
+    "userStatus": "deactive",
+    "mobile": "01738128766",
+    "address": "Village 1, Upazila 1",
+    "reference": "Ref-1",
+    "totalAmount": 1283,
+    "paidAmount": 998,
+    "unPaidAmount": 285,
+    "role": "manager",
+    "password": "hashed_dummy_password",
+    "email": "user1@padma.net",
+    "taskIds": [
+      {
+        "$oid": "572eb7ba0c464b70aea84bdc"
+      },
+      {
+        "$oid": "317f6774071845668b55f5c7"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.850539",
+    "updatedAt": "2025-06-15T08:38:07.850559"
+  },
+  {
+    "_id": {
+      "$oid": "5eeb4aa3d4774bac811d03ea"
+    },
+    "userId": "2",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=1",
+    "userName": "User 2",
+    "userStatus": "active",
+    "mobile": "01747121873",
+    "address": "Village 2, Upazila 3",
+    "reference": "Ref-2",
+    "totalAmount": 1068,
+    "paidAmount": 847,
+    "unPaidAmount": 221,
+    "role": "manager",
+    "password": "hashed_dummy_password",
+    "email": "user2@padma.net",
+    "taskIds": [
+      {
+        "$oid": "028d7670bf2149bdbbf157f8"
+      },
+      {
+        "$oid": "a0fa003f1fa34fc688644c48"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.850617",
+    "updatedAt": "2025-06-15T08:38:07.850620"
+  },
+  {
+    "_id": {
+      "$oid": "9cb81af334aa4aa5bc0a99db"
+    },
+    "userId": "3",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=2",
+    "userName": "User 3",
+    "userStatus": "deactive",
+    "mobile": "01741804197",
+    "address": "Village 3, Upazila 2",
+    "reference": "Ref-3",
+    "totalAmount": 1827,
+    "paidAmount": 1230,
+    "unPaidAmount": 597,
+    "role": "admin",
+    "password": "hashed_dummy_password",
+    "email": "user3@padma.net",
+    "taskIds": [
+      {
+        "$oid": "ffdcef26d87e4253b0dd0627"
+      },
+      {
+        "$oid": "5d8f09622f87487cba2f3a22"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.850672",
+    "updatedAt": "2025-06-15T08:38:07.850676"
+  },
+  {
+    "_id": {
+      "$oid": "998e6d5d5a0b408eb0f76fe3"
+    },
+    "userId": "4",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=3",
+    "userName": "User 4",
+    "userStatus": "active",
+    "mobile": "01730641076",
+    "address": "Village 4, Upazila 1",
+    "reference": "Ref-4",
+    "totalAmount": 2733,
+    "paidAmount": 2303,
+    "unPaidAmount": 430,
+    "role": "admin",
+    "password": "hashed_dummy_password",
+    "email": "user4@padma.net",
+    "taskIds": [
+      {
+        "$oid": "d7c5a5ed44f34c90af7ccc5c"
+      },
+      {
+        "$oid": "2ae388e91eec403591c48458"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.850714",
+    "updatedAt": "2025-06-15T08:38:07.850717"
+  },
+  {
+    "_id": {
+      "$oid": "526ab06f3d1d476e9b50d6a8"
+    },
+    "userId": "5",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=4",
+    "userName": "User 5",
+    "userStatus": "active",
+    "mobile": "01774540772",
+    "address": "Village 5, Upazila 1",
+    "reference": "Ref-5",
+    "totalAmount": 3481,
+    "paidAmount": 2515,
+    "unPaidAmount": 966,
+    "role": "admin",
+    "password": "hashed_dummy_password",
+    "email": "user5@padma.net",
+    "taskIds": [
+      {
+        "$oid": "a65a0765483f4a28b80fc235"
+      },
+      {
+        "$oid": "82be1f57039a43668d662121"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.850751",
+    "updatedAt": "2025-06-15T08:38:07.850754"
+  },
+  {
+    "_id": {
+      "$oid": "bc4dc36cc3024b3ba0df1d84"
+    },
+    "userId": "6",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=5",
+    "userName": "User 6",
+    "userStatus": "deactive",
+    "mobile": "01716104846",
+    "address": "Village 6, Upazila 1",
+    "reference": "Ref-6",
+    "totalAmount": 1384,
+    "paidAmount": 911,
+    "unPaidAmount": 473,
+    "role": "admin",
+    "password": "hashed_dummy_password",
+    "email": "user6@padma.net",
+    "taskIds": [
+      {
+        "$oid": "fd96099180ee427db57260fe"
+      },
+      {
+        "$oid": "4b977760eadd4e869ab5379e"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.850786",
+    "updatedAt": "2025-06-15T08:38:07.850790"
+  },
+  {
+    "_id": {
+      "$oid": "76c0efe2a45c4eff97aaafa7"
+    },
+    "userId": "7",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=6",
+    "userName": "User 7",
+    "userStatus": "active",
+    "mobile": "01732117762",
+    "address": "Village 7, Upazila 1",
+    "reference": "Ref-7",
+    "totalAmount": 2380,
+    "paidAmount": 1343,
+    "unPaidAmount": 1037,
+    "role": "manager",
+    "password": "hashed_dummy_password",
+    "email": "user7@padma.net",
+    "taskIds": [
+      {
+        "$oid": "defb327eee5245ab801c3472"
+      },
+      {
+        "$oid": "e8aeb48f41304d458920bdb2"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.850830",
+    "updatedAt": "2025-06-15T08:38:07.850833"
+  },
+  {
+    "_id": {
+      "$oid": "7fa64b7d3c934ade8d725d2d"
+    },
+    "userId": "8",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=7",
+    "userName": "User 8",
+    "userStatus": "deactive",
+    "mobile": "01717259235",
+    "address": "Village 8, Upazila 5",
+    "reference": "Ref-8",
+    "totalAmount": 2784,
+    "paidAmount": 984,
+    "unPaidAmount": 1800,
+    "role": "user",
+    "password": "hashed_dummy_password",
+    "email": "user8@padma.net",
+    "taskIds": [
+      {
+        "$oid": "6650a8a4fdfd48e28721dc2f"
+      },
+      {
+        "$oid": "4a083cb4111b45f7ab21cb32"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.850870",
+    "updatedAt": "2025-06-15T08:38:07.850873"
+  },
+  {
+    "_id": {
+      "$oid": "30cad1ae44b0425f80c45f40"
+    },
+    "userId": "9",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=8",
+    "userName": "User 9",
+    "userStatus": "active",
+    "mobile": "01716801365",
+    "address": "Village 9, Upazila 3",
+    "reference": "Ref-9",
+    "totalAmount": 2768,
+    "paidAmount": 2689,
+    "unPaidAmount": 79,
+    "role": "admin",
+    "password": "hashed_dummy_password",
+    "email": "user9@padma.net",
+    "taskIds": [
+      {
+        "$oid": "04c2539b84b44ba6ba65abf2"
+      },
+      {
+        "$oid": "5ae2856ddc9b473ca8bc5f80"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.850897",
+    "updatedAt": "2025-06-15T08:38:07.850900"
+  },
+  {
+    "_id": {
+      "$oid": "72560978218f42808b52d74b"
+    },
+    "userId": "10",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=9",
+    "userName": "User 10",
+    "userStatus": "deactive",
+    "mobile": "01746285017",
+    "address": "Village 10, Upazila 3",
+    "reference": "Ref-10",
+    "totalAmount": 3792,
+    "paidAmount": 1580,
+    "unPaidAmount": 2212,
+    "role": "manager",
+    "password": "hashed_dummy_password",
+    "email": "user10@padma.net",
+    "taskIds": [
+      {
+        "$oid": "9031cf3b9e7741ee9edc83dd"
+      },
+      {
+        "$oid": "c8a20b59e294445590b09f70"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.850914",
+    "updatedAt": "2025-06-15T08:38:07.850916"
+  },
+  {
+    "_id": {
+      "$oid": "e6e619cd66c74a278bc5fb7d"
+    },
+    "userId": "11",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=10",
+    "userName": "User 11",
+    "userStatus": "active",
+    "mobile": "01772935165",
+    "address": "Village 11, Upazila 5",
+    "reference": "Ref-11",
+    "totalAmount": 3701,
+    "paidAmount": 2452,
+    "unPaidAmount": 1249,
+    "role": "admin",
+    "password": "hashed_dummy_password",
+    "email": "user11@padma.net",
+    "taskIds": [
+      {
+        "$oid": "d8a5f5560d2e42cb9713a2a8"
+      },
+      {
+        "$oid": "512776546d9d4e759a190aee"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.850934",
+    "updatedAt": "2025-06-15T08:38:07.850937"
+  },
+  {
+    "_id": {
+      "$oid": "69f8f2f7912a4263901c0694"
+    },
+    "userId": "12",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=11",
+    "userName": "User 12",
+    "userStatus": "deactive",
+    "mobile": "01785153974",
+    "address": "Village 12, Upazila 1",
+    "reference": "Ref-12",
+    "totalAmount": 2781,
+    "paidAmount": 2299,
+    "unPaidAmount": 482,
+    "role": "user",
+    "password": "hashed_dummy_password",
+    "email": "user12@padma.net",
+    "taskIds": [
+      {
+        "$oid": "47aa69fb93c340558eca1c3f"
+      },
+      {
+        "$oid": "d634c33d41e04d8694159a23"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.850950",
+    "updatedAt": "2025-06-15T08:38:07.850952"
+  },
+  {
+    "_id": {
+      "$oid": "518ea91d187a4757b82a1b98"
+    },
+    "userId": "13",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=12",
+    "userName": "User 13",
+    "userStatus": "deactive",
+    "mobile": "01771353497",
+    "address": "Village 13, Upazila 4",
+    "reference": "Ref-13",
+    "totalAmount": 1042,
+    "paidAmount": 878,
+    "unPaidAmount": 164,
+    "role": "admin",
+    "password": "hashed_dummy_password",
+    "email": "user13@padma.net",
+    "taskIds": [
+      {
+        "$oid": "e1103a6642674d288220fa2f"
+      },
+      {
+        "$oid": "1221d5b4176841b5989d9e90"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.850967",
+    "updatedAt": "2025-06-15T08:38:07.850969"
+  },
+  {
+    "_id": {
+      "$oid": "5c9e301bd7824152a33fc871"
+    },
+    "userId": "14",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=13",
+    "userName": "User 14",
+    "userStatus": "deactive",
+    "mobile": "01733027084",
+    "address": "Village 14, Upazila 4",
+    "reference": "Ref-14",
+    "totalAmount": 4637,
+    "paidAmount": 4529,
+    "unPaidAmount": 108,
+    "role": "manager",
+    "password": "hashed_dummy_password",
+    "email": "user14@padma.net",
+    "taskIds": [
+      {
+        "$oid": "7e06dcc24e274c268c2ed7dc"
+      },
+      {
+        "$oid": "1e2e0982627a4f1486ffa0e0"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.850982",
+    "updatedAt": "2025-06-15T08:38:07.850984"
+  },
+  {
+    "_id": {
+      "$oid": "41e177974b2e4452a5de35f2"
+    },
+    "userId": "15",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=14",
+    "userName": "User 15",
+    "userStatus": "active",
+    "mobile": "01749993588",
+    "address": "Village 15, Upazila 1",
+    "reference": "Ref-15",
+    "totalAmount": 4259,
+    "paidAmount": 3332,
+    "unPaidAmount": 927,
+    "role": "admin",
+    "password": "hashed_dummy_password",
+    "email": "user15@padma.net",
+    "taskIds": [
+      {
+        "$oid": "7e06dcc24e274c268c2ed7dc"
+      },
+      {
+        "$oid": "1e2e0982627a4f1486ffa0e0"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.850996",
+    "updatedAt": "2025-06-15T08:38:07.850998"
+  },
+  {
+    "_id": {
+      "$oid": "6c56078364eb428cbf819955"
+    },
+    "userId": "16",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=15",
+    "userName": "User 16",
+    "userStatus": "active",
+    "mobile": "01764988882",
+    "address": "Village 16, Upazila 2",
+    "reference": "Ref-16",
+    "totalAmount": 3227,
+    "paidAmount": 501,
+    "unPaidAmount": 2726,
+    "role": "user",
+    "password": "hashed_dummy_password",
+    "email": "user16@padma.net",
+    "taskIds": [
+      {
+        "$oid": "a602c0141fde4c2186b17131"
+      },
+      {
+        "$oid": "fc7ec5af60104e1498cf4d82"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.851011",
+    "updatedAt": "2025-06-15T08:38:07.851013"
+  },
+  {
+    "_id": {
+      "$oid": "607444f0a50d43b8b5801048"
+    },
+    "userId": "17",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=16",
+    "userName": "User 17",
+    "userStatus": "active",
+    "mobile": "01793194702",
+    "address": "Village 17, Upazila 2",
+    "reference": "Ref-17",
+    "totalAmount": 1082,
+    "paidAmount": 791,
+    "unPaidAmount": 291,
+    "role": "manager",
+    "password": "hashed_dummy_password",
+    "email": "user17@padma.net",
+    "taskIds": [
+      {
+        "$oid": "d5c33749b2e844f380325642"
+      },
+      {
+        "$oid": "ad865cfe41224bc982e317aa"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.851026",
+    "updatedAt": "2025-06-15T08:38:07.851028"
+  },
+  {
+    "_id": {
+      "$oid": "4010ad2a02b54b7e89e55bf3"
+    },
+    "userId": "18",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=17",
+    "userName": "User 18",
+    "userStatus": "deactive",
+    "mobile": "01793003196",
+    "address": "Village 18, Upazila 2",
+    "reference": "Ref-18",
+    "totalAmount": 4616,
+    "paidAmount": 2882,
+    "unPaidAmount": 1734,
+    "role": "manager",
+    "password": "hashed_dummy_password",
+    "email": "user18@padma.net",
+    "taskIds": [
+      {
+        "$oid": "5533b1c663b242d9b8253bee"
+      },
+      {
+        "$oid": "8894541c0ebe47e0bf7638c5"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.851040",
+    "updatedAt": "2025-06-15T08:38:07.851043"
+  },
+  {
+    "_id": {
+      "$oid": "2dd65e2bbbc74f199a3f73c3"
+    },
+    "userId": "19",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=18",
+    "userName": "User 19",
+    "userStatus": "deactive",
+    "mobile": "01755309000",
+    "address": "Village 19, Upazila 3",
+    "reference": "Ref-19",
+    "totalAmount": 1391,
+    "paidAmount": 696,
+    "unPaidAmount": 695,
+    "role": "admin",
+    "password": "hashed_dummy_password",
+    "email": "user19@padma.net",
+    "taskIds": [
+      {
+        "$oid": "4712af7b236f4c8aa686c6eb"
+      },
+      {
+        "$oid": "0cf813fc80c94845b0c422e9"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.851055",
+    "updatedAt": "2025-06-15T08:38:07.851057"
+  },
+  {
+    "_id": {
+      "$oid": "db806c885e8445159da3c4ad"
+    },
+    "userId": "20",
+    "avatarImage": "https://api.dicebear.com/7.x/personas/svg?seed=19",
+    "userName": "User 20",
+    "userStatus": "active",
+    "mobile": "01752149610",
+    "address": "Village 20, Upazila 1",
+    "reference": "Ref-20",
+    "totalAmount": 3391,
+    "paidAmount": 2852,
+    "unPaidAmount": 539,
+    "role": "manager",
+    "password": "hashed_dummy_password",
+    "email": "user20@padma.net",
+    "taskIds": [
+      {
+        "$oid": "29bdc7ca461a48d5ab070b67"
+      },
+      {
+        "$oid": "24283dfce3eb41aebecc6b9b"
+      }
+    ],
+    "createdAt": "2025-06-15T08:38:07.851069",
+    "updatedAt": "2025-06-15T08:38:07.851071"
+  }
+]
