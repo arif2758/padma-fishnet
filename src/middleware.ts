@@ -42,5 +42,5 @@ export default auth(async (req: NextRequest & { auth: Session | null }) => {
 });
 
 export const config = {
-  matcher: ["/", "/admin", "/profile"],
+  matcher: [ "/admin", "/profile"],
 };
