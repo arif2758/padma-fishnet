@@ -4,6 +4,7 @@ import { Table, Tag, Select, Modal, Input, message } from "antd";
 import type { ColumnsType } from "antd/es/table";
 import { IClientTask, PaymentStatus, TaskStatus } from "@/models/enumType";
 import { FaRegEdit } from "react-icons/fa";
+import { useSession } from "next-auth/react";
 
 // Color function for Task Status
 const statusColor = (status: TaskStatus) => {
@@ -42,12 +43,13 @@ export default function UserTasksTable({ clientTasks }: UserTasksTableProps) {
   const [tableLoading, setTableLoading] = useState(true);
   const [tasks, setTasks] = useState<IClientTask[]>([]);
 
+  const { data: session } = useSession();
   useEffect(() => {
     // Simulate loading delay for smooth transition
     const timer = setTimeout(() => {
       setTasks(clientTasks);
       setTableLoading(false);
-    }, 500);
+    }, 300);
 
     return () => clearTimeout(timer);
   }, [clientTasks]);
@@ -127,65 +129,95 @@ export default function UserTasksTable({ clientTasks }: UserTasksTableProps) {
     {
       title: "Comment",
       key: "comment",
-      render: (_, record: IClientTask) => (
-        <div className="flex items-center gap-2">
-          <span>{record.comment || "-"}</span>
-          <button
-            onClick={() => handleOpenModal(record._id, record.comment || "")}
-          >
-            <FaRegEdit />
-          </button>
-        </div>
-      ),
+      render: (_, record: IClientTask) => {
+        return session?.user?.role === "admin" ? (
+          <div className="flex items-center gap-2">
+            <span>{record.comment || "-"}</span>
+            <button
+              onClick={() => handleOpenModal(record._id, record.comment || "")}
+            >
+              <FaRegEdit />
+            </button>
+          </div>
+        ) : (
+          <div>{record.comment || "-"}</div>
+        );
+      },
     },
     {
       title: "Status",
       key: "taskStatus",
-      render: (_, record: IClientTask) => (
-        <Select
-          variant="borderless"
-          value={record.taskStatus}
-          onChange={(value) =>
-            updateTask(record._id, { taskStatus: value as TaskStatus })
-          }
-          loading={loading[record.taskStatus]}
-          style={{
-            width: 120,
-          }}
-        >
-          {Object.values(TaskStatus).map((status) => (
-            <Option key={status} value={status}>
-              <Tag color={statusColor(status)} style={{ marginRight: "0px" }}>
-                {status}
-              </Tag>
-            </Option>
-          ))} 
-        </Select>
-      ),
+      render: (_, record: IClientTask) => {
+        return session?.user?.role === "admin" ? (
+          <Select
+            variant="borderless"
+            value={record.taskStatus}
+            onChange={(value) =>
+              updateTask(record._id, { taskStatus: value as TaskStatus })
+            }
+            loading={loading[record.taskStatus]}
+            style={{
+              width: 120,
+            }}
+          >
+            {Object.values(TaskStatus).map((status) => (
+              <Option key={status} value={status}>
+                <Tag color={statusColor(status)} style={{ marginRight: "0px" }}>
+                  {status}
+                </Tag>
+              </Option>
+            ))}
+          </Select>
+        ) : (
+          <div>
+            {" "}
+            <Tag
+              color={statusColor(record.taskStatus)}
+              style={{ marginRight: "0px" }}
+            >
+              {record.taskStatus}
+            </Tag>
+          </div>
+        );
+      },
     },
     {
       title: "Payment",
       key: "taskPayment",
-      render: (_, record: IClientTask) => (
-        <Select
-          variant="borderless"
-          value={record.taskPayment}
-          onChange={(value) => updateTask(record._id, { taskPayment: value })}
-          loading={loading[record.taskPayment]}
-          style={{ width: 120 }}
-        >
-          {Object.values(PaymentStatus).map((status) => (
-            <Option key={status} value={status}>
-              <Tag
-                style={{ marginRight: "0px" }}
-                color={status === PaymentStatus.PAID ? "green" : "red"}
-              >
-                {status}
-              </Tag>
-            </Option>
-          ))}
-        </Select>
-      ),
+      render: (_, record: IClientTask) => {
+        return session?.user?.role === "admin" ? (
+          <Select
+            variant="borderless"
+            value={record.taskPayment}
+            onChange={(value) => updateTask(record._id, { taskPayment: value })}
+            loading={loading[record.taskPayment]}
+            style={{ width: 120 }}
+          >
+            {Object.values(PaymentStatus).map((payment) => (
+              <Option key={payment} value={payment}>
+                <Tag
+                  style={{ marginRight: "0px" }}
+                  color={payment === PaymentStatus.PAID ? "green" : "red"}
+                >
+                  {payment}
+                </Tag>
+              </Option>
+            ))}
+          </Select>
+        ) : (
+          <div>
+            {" "}
+            <Tag
+              color={
+                record.taskPayment === PaymentStatus.PAID ? "green" : "red"
+              }
+              style={{ marginRight: "0px" }}
+            >
+              {record.taskPayment}
+            </Tag>{" "}
+          </div>
+        );
+      },
     },
     {
       title: "Price",

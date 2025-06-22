@@ -2,11 +2,10 @@ import mongoose, { Document, Schema, Model, Types } from "mongoose";
 import { IUser } from "./usermodel";
 import { PaymentStatus, TaskStatus } from "./enumType";
 
- 
- 
 // Interface for Task model
 export interface ITask extends Document {
-  _id: Types.ObjectId; 
+  _id: Types.ObjectId;
+  taskId: string;
   itemName: string;
   issuDate: Date;
   itemQuantity: number;
@@ -23,12 +22,12 @@ export interface ITask extends Document {
   updatedAt?: Date;
 }
 
-// Task Schema 
+// Task Schema
 const taskSchema = new Schema<ITask>(
   {
-   
+    taskId: { type: String, required: true },
     itemName: { type: String, required: true },
-    issuDate: { type: Date, required: true }, 
+    issuDate: { type: Date, required: true },
     itemQuantity: { type: Number, required: true },
     itemUnit: { type: String },
     submitDate: { type: Date },

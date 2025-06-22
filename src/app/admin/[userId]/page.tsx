@@ -6,5 +6,6 @@ export default async function UserDetailsPage({
   params: Promise<{ userId: string }>;
 }) {
   const { userId } = await params;
-  return <UserDetailsComponent userId={userId} />;
+  return <UserDetailsComponent userId={userId} isAdminPage ={true} />;
 }
+ 

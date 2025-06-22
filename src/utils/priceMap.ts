@@ -6,7 +6,7 @@ const priceMap: Record<string, { pcs?: number; বান্ডেল?: number }>
   "মেইন জালের বডি সেলাই": { pcs: 40 },
   "পকেট সেলাই": { বান্ডেল: 90 },
   "ক্রস সেলাই": { বান্ডেল: 90 },
-  "লাস্ট-গেইট সেলাই": { pcs: 1 },
+  "লাস্ট-গেইট সেলাই": { বান্ডেল: 100 },
   "লেজের বডি সেলাই": { pcs: 5 },
   "রিংজাল তৈরি": { বান্ডেল: 200},
   "লেজের খাঁচি তৈরি": { pcs: 3 },
@@ -25,3 +25,4 @@ export function calculateTaskPrice(
   const unitPrice = priceMap[itemName]?.[unit] ?? 0;
   return quantity * unitPrice;
 }
+ 

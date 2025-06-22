@@ -3,6 +3,7 @@ import UserTasksTable from "./UserTasksTable";
 
 interface UserDetailsClientProps {
   userId: string;
+  isAdminPage: boolean;
 }
 
 import dbConnect from "@/db/dbConnect";
@@ -13,6 +14,7 @@ import { redirect } from "next/navigation";
 
 export default async function UserDetailsComponent({
   userId,
+  isAdminPage,
 }: UserDetailsClientProps) {
   const session = await auth();
 
@@ -20,7 +22,7 @@ export default async function UserDetailsComponent({
     // Redirect to login page if no session is found
     redirect("/login");
   }
-  try {
+  try { 
     await dbConnect();
 
     const user = await UserCollectionModel.findOne({
@@ -36,9 +38,16 @@ export default async function UserDetailsComponent({
       _id: { $in: user.taskIds },
     }).lean();
 
+
+       // Get the last taskId from the database, increment it by 1, or start at 1 if no user exists
+
+      const lastTask = await TaskCollectionModel.findOne().sort({ taskId: -1 }).limit(1);
+        const newTaskId = lastTask ? parseInt(lastTask.taskId) + 1 : 1;
+
     // Table component expects tasks in a plain javascript format
     const clientTasks = tasks.map((task) => ({
       _id: task._id.toString(),
+      taskId: newTaskId,
       itemName: task.itemName,
       issuDate:
         typeof task.issuDate === "string"
@@ -61,7 +70,7 @@ export default async function UserDetailsComponent({
     // Pass user and tasks as separate props
     return (
       <div className="container mx-auto px-4 py-8">
-        <UserHeader user={user} />
+        <UserHeader user={user} isAdminPage={isAdminPage} />
         <div className="mt-8">
           <UserTasksTable clientTasks={clientTasks} />
         </div>

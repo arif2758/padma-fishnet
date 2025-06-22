@@ -8,12 +8,13 @@ import { useRouter } from "next/navigation";
 import { LockOutlined } from "@ant-design/icons";
 import { MdOutlineLocalPhone } from "react-icons/md";
 
-import { CiUser } from "react-icons/ci";
+import { CiLocationOn, CiUser } from "react-icons/ci";
 
 interface RegisterFormValues {
   userName: string;
 
   mobile: string;
+  address: string;
 
   password: string;
 }
@@ -115,7 +116,7 @@ const Register: React.FC = () => {
       <Form
         {...formItemLayout}
         form={form}
-        name="register" 
+        name="register"
         onFinish={onFinish}
         style={{ maxWidth: 360, margin: "auto" }}
         scrollToFirstError
@@ -146,6 +147,16 @@ const Register: React.FC = () => {
             maxLength={11}
             placeholder="01XXXXXXXXX"
             inputMode="numeric"
+          />
+        </Form.Item>
+        <Form.Item
+          name="address"
+          rules={[{ required: true, message: "আপনার এলাকার নাম প্রদান করুন" }]}
+        >
+          <Input
+            prefix={<CiLocationOn />}
+            maxLength={11}
+            placeholder="আপানার এলাকার নাম বা রেফারেন্স"
           />
         </Form.Item>
 

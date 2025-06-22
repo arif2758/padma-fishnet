@@ -10,9 +10,13 @@ type LeanDocument<T> = Omit<T, keyof Document>;
 
 interface UserHeaderProps {
   user: LeanDocument<IUser>;
+  isAdminPage: boolean;
 }
 
-export default async function UserHeader({ user }: UserHeaderProps) {
+export default async function UserHeader({
+  user,
+  isAdminPage,
+}: UserHeaderProps) {
   const amounts = await calculateAmount(user.userId);
   const session = await auth();
   if (!session?.user) return null;
@@ -31,18 +35,16 @@ export default async function UserHeader({ user }: UserHeaderProps) {
             <Avatar
               size={80}
               src={user.avatarImage || "/default-avatar.png"}
-              alt={session?.user?.name || "User Avatar"}
+              alt={user.userName || "User Avatar"}
               className="ring-2 ring-blue-500"
             />
             <div>
               <h2 className="text-xl font-bold text-gray-800">
-                {session?.user?.name}
+                {user?.userName}
               </h2>
               <p className="text-gray-500">
                 <HiIdentification className="inline mr-1 text-blue-400" />
-                <span className="font-mono text-sm">
-                  ID: {session?.user?.id}
-                </span>
+                <span className="font-mono text-sm">ID: {user?.userId}</span>
               </p>
               <Tag
                 color={user.userStatus === "active" ? "green" : "red"}
@@ -54,9 +56,8 @@ export default async function UserHeader({ user }: UserHeaderProps) {
           </div>
 
           {/* Upload Button */}
-
-          {session?.user?.role === "admin" && (
-            <div className="">
+          {isAdminPage && session?.user?.role === "admin" && (
+            <div>
               <UploadTaskModal userId={user.userId} />
             </div>
           )}

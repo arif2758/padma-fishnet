@@ -14,7 +14,7 @@ interface TaskFormValues {
 
 function UploadTaskCoponent({ userId }: { userId: string }) {
   const [loading, setLoading] = useState(false);
-  const [itemUnit, setItemUnit] = useState("pcs");
+  const [itemUnit, setItemUnit] = useState("বান্ডেল");
 
   const [form] = Form.useForm();
 
@@ -23,7 +23,7 @@ function UploadTaskCoponent({ userId }: { userId: string }) {
   const onFinish = async (values: TaskFormValues) => {
     setLoading(true);
     try {
-      const taskData = { 
+      const taskData = {
         userId,
         itemName: values.itemName,
         itemQuantity: values.itemQuantity,
@@ -77,14 +77,14 @@ function UploadTaskCoponent({ userId }: { userId: string }) {
 
   const selectAfterItemUnit = (
     <Select
-      defaultValue="pcs"
+      defaultValue="বান্ডেল"
       style={{ width: 100 }}
       value={itemUnit}
       onChange={(value) => setItemUnit(value)}
     >
-      <Option value="pcs">pcs</Option>
+      {" "}
       <Option value="বান্ডেল">বান্ডেল</Option>
-      
+      <Option value="pcs">pcs</Option>
     </Select>
   );
 
@@ -136,7 +136,6 @@ function UploadTaskCoponent({ userId }: { userId: string }) {
           <InputNumber
             placeholder="Enter quantity"
             addonAfter={selectAfterItemUnit}
-            
           />
         </Form.Item>
 
