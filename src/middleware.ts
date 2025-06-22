@@ -12,7 +12,7 @@ export default auth(async (req: NextRequest & { auth: Session | null }) => {
   const session = req.auth;
   const { pathname } = req.nextUrl;
 
-  // No session = redirect to login
+ 
   if (!session?.user) {
     const response = NextResponse.redirect(new URL("/login", req.url));
     response.cookies.set("authjs.session-token", "", { maxAge: 0 });
@@ -22,7 +22,7 @@ export default auth(async (req: NextRequest & { auth: Session | null }) => {
 
   const userRole = session.user.role as UserRole;
 
-  // Admin has full access
+
   if (userRole === UserRole.ADMIN) {
     return NextResponse.next();
   }
