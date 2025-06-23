@@ -4,7 +4,7 @@ import { UserCollectionModel } from "@/models/usermodel";
 import { TaskCollectionModel } from "@/models/taskmodel";
 import mongoose from "mongoose";
 import { PaymentStatus, TaskStatus } from "@/models/enumType";
-import { calculateTaskPrice,  } from "@/utils/priceMap";
+import { calculateTaskPrice } from "@/utils/priceMap";
 
 export async function POST(request: Request) {
   try {
@@ -29,13 +29,20 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "User not found" }, { status: 404 });
     }
 
- // Calculate Task Price based on itemQuantity and a fixed price per unit
+    // Calculate Task Price based on itemQuantity and a fixed price per unit
 
-const taskPrice = calculateTaskPrice(itemName, itemQuantity, itemUnit);
+    const taskPrice = calculateTaskPrice(itemName, itemQuantity, itemUnit);
+
+    // Get the last taskId from the database, increment it by 1, or start at 1 if no user exists
+
+    const lastTask = await TaskCollectionModel.findOne()
+      .sort({ taskId: -1 })
+      .limit(1);
+    const newTaskId = lastTask ? parseInt(lastTask.taskId) + 1 : 1;
 
     // 5. Create new task with proper validation
     const taskData = {
-    
+      taskId: newTaskId,
       itemName,
       issuDate: new Date(),
       itemQuantity,
@@ -43,7 +50,7 @@ const taskPrice = calculateTaskPrice(itemName, itemQuantity, itemUnit);
       submitQuantity: 0, // Initialize with 0
       submitUnit: "pcs", // Same as issue unit
       taskStatus: TaskStatus.PROCESSING,
-      taskPrice: taskPrice , // Initialize with 0
+      taskPrice: taskPrice, // Initialize with 0
       taskPayment: PaymentStatus.UNPAID,
       assignedTo: user._id,
     };
